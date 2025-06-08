@@ -1,37 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="refresh" content="3;url=https://discord.gg/scv3">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Redirecting...</title>
+  <meta property="og:title" content="Shortcut" />
+  <meta property="og:description" content="Join Shortcut, the best KAH script & scripting community" />
+  <meta property="og:image" content="https://i.postimg.cc/W39n6Wxv/sc.png" />
+  <meta name="theme-color" content="#4e2885" />
+  <title>Shortcut</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
   <style>
     body {
+      background-color: #4e2885;
+      overflow: hidden;
       margin: 0;
-      background-color: #4B0082; /* Deep purple */
-      color: white;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
     }
 
-    img {
+    .logo-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .logo {
       width: 250px;
-      height: auto;
+      height: 250px;
       border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 25px;
+      animation: flash 3s ease-in-out infinite;
     }
 
     p {
-      margin-top: 20px;
-      font-size: 1.2em;
+      font-size: 24px;
+      margin-top: 30px;
+      color: white;
+      animation: flash 3s ease-in-out infinite;
+    }
+
+    .watermark {
+      position: absolute;
+      top: 30px;
+      left: 10px;
+      font-size: 12px;
+      color: #fff;
+      opacity: 0.3;
+    }
+
+    @keyframes flash {
+      0%, 100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.4;
+      }
     }
   </style>
 </head>
 <body>
-  <img src="sc.png" alt="Redirecting Logo">
-  <p>You are being redirected...</p>
+  <div class="watermark">Invite made by Korabi</div>
+  <div class="logo-container">
+    <div class="logo">
+      <img src="https://i.postimg.cc/W39n6Wxv/sc.png" alt="Logo" />
+    </div>
+    <p>You are being redirected...</p>
+  </div>
 </body>
 </html>
